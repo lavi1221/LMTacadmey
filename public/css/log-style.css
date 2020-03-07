@@ -1,0 +1,87 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+body{
+
+    background-image: url(/img/ymca.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+hr{
+
+      left: 750px;
+      height: 0px;
+      width: 5px;
+      border-style:outset;
+      border-bottom-width: 0px;
+      border-top-width: 230px;
+      border-left-width: 0px;
+      border-radius: 10px;
+      border-color:  white;
+
+      display:flex;
+      left: 760px;
+      top: 280px;
+      position: absolute;
+      z-index: 2;
+
+
+}
+.logo{
+  border-radius:50%;
+  height: 100px;
+  max-width: 150px;
+  margin-left: 60px;
+  display:inline;
+  margin-right: 60px;
+}
+.ghu
+{
+
+    margin-top:150px;
+    height:auto;
+    background:rgba(0,0,0,0.6);
+    border-radius:10px 0 10px 0 ;
+    box-shadow: -1px 1px 60px 10px black inset;
+}
+.aa
+{
+    margin:30px;
+}
+.bb
+{
+    color:white;
+
+}
+
+.btn btn-primary
+{
+
+    margin:10px;
+
+}
+.new{
+  display:inline-block;
+  color:white;
+  margin-left: 30%;
+}
+.sign-up{
+  margin-left: 15px;
+  display: inline-block;
+  color: rgba(121,9,26,1);
+  text-shadow: 2px 2px 5px rgb(2,0,36);
+
+}
+.sign-up:hover{
+  color:#ED7593;
+}
+.fty{
+  justify-content: center;
+  margin-top:20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 50px 0;
+}
