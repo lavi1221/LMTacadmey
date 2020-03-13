@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+<div class="big">
+  <div class=" jumbotron text-center tt">
+    <div class="img-div">
+    <% if(user.gender === 'male') { %>
+      <img src="/img/man.png" class ="gen-img" alt="img">
+    <% } else { %>
+      <img src="/img/female.png" class ="gen-img" alt="img">
+     <% } %>
+
+    </div>
+  <hr>
+    <div class="details">
+      <table class="table">
+         <tr>
+          <th class="thead-dark"> Username :</th>
+          <td class="table-td"> <%= user.username %></td>
+         </tr>
+         <tr>
+          <th class="thead-dark"> Phone No :</th>
+          <td class="table-td"> <%= user.phoneNo %></td>
+         </tr>
+         <tr>
+          <th class="thead-dark"> Gender :</th>
+          <td class="table-td"> <%= user.gender %></td>
+         </tr>
+         <tr>
+          <th class="thead-dark"> Semester :</th>
+          <td class="table-td"> <%= user.sem %></td>
+         </tr>
+      </table>
+    </div>
+    <a href="userHome" class="btn btn-dark ln">Back to Main Menu</a>
+  </div>
+
+</div>
+
+
+
+
+<%- include('partials/footer') %>
