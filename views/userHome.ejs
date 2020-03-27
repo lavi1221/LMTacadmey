@@ -1,4 +1,8 @@
 <%- include('partials/header') %>
+<% const Sem3=["Progamming and Data Structures","Computer Organisation","Digital Logic"]; %>
+<% const Sem4=["Operating System","Algorithm"]; %>
+<% const Sem5=["Database Management System","Compiler Design"]; %>
+<% const Sem6=["Computer Network","Theory of Computation"]; %>
 
     <p class="name">Hi! <span class ='name-span'><%= user.username %> </span>🖐 </p>
 <div class="lk">
@@ -20,6 +24,47 @@
 <div class="col-8">
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+   <% if(user.sem === "Sem3"){  %>
+     <% Sem3.forEach(function(item){ %>
+       <div class="card iot" style="width:300px">
+       <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
+       <div class="card-body">
+        <h4 class="card-title"><%=item%></h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">Start</a>
+       </div>
+       </div>
+      <%})}else if(user.sem === "Sem4"){%>
+        <% Sem4.forEach(function(item){ %>
+          <div class="card iot" style="width:300px">
+          <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
+          <div class="card-body">
+           <h4 class="card-title"><%item%></h4>
+           <p class="card-text">Some example text.</p>
+           <a href="#" class="btn btn-primary">Start</a>
+          </div>
+          </div>
+         <%})}else if(user.sem === "Sem5"){%>
+           <% Sem5.forEach(function(item){ %>
+             <div class="card iot" style="width:300px">
+             <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
+             <div class="card-body">
+              <h4 class="card-title"><%item%></h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">Start</a>
+             </div>
+             </div>
+            <%})}else{%>
+              <% Sem6.forEach(function(item){ %>
+                <div class="card iot" style="width:300px">
+                <img class="card-img-top" src="/img/<%= item %>.jpg" alt="Card image">
+                <div class="card-body">
+                 <h4 class="card-title"><%= item %></h4>
+                 <p class="card-text">Some example text.</p>
+                 <a href="#" class="btn btn-primary">Start</a>
+                </div>
+                </div>
+               <%})}%>
 
     </div>
   <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
@@ -75,12 +120,32 @@
 <div class="col-2">
   <div class="row">
     <div class="col">
-      
+      <div class="card yi" style="width:300px">
+      <div class="card-body">
+       <h4 class="card-title yit">Sessional Syllabus</h4>
+       <marquee direction="up" scrollamount="3" onmouseover="stop()" onmouseout="start()">
+            <p class="card-text">Some example text.</p>
+               <p class="card-text">Some example text.</p>
+                  <p class="card-text">Some example text.</p>
+       </marquee>
+  </div>
+      </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
+      <div class="card yi" style="width:300px">
+      <div class="card-body">
+       <h4 class="card-title yit">Assignments</h4>
+      <marquee direction="up" scrollamount="3" onmouseover="stop()" onmouseout="start()">
+        <p class="card-text">Some example text.</p>
+           <p class="card-text">Some example text.</p>
+              <p class="card-text">Some example text.</p>
+             <p class="card-text">Some example text.</p>
+      </marquee>
 
+      </div>
+      </div>
     </div>
   </div>
 </div>

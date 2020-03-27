@@ -6,14 +6,22 @@ const ejs=require("ejs");
 const mongoose=require("mongoose");
 const passportLocalMongoose = require('passport-local-mongoose');
 const passport=require("passport");
-const Swal=require("sweetalert2");
+const swal=require("sweetalert2");
 const session =require("express-session");
 const date =require("date-and-time");
+const nodemailer=require("nodemailer");
 
 const app=express();
+const transporter=nodemailer.createTransport({
+    service:'gmail',
+    auth:{
+      user: process.env.USER,
+      pass: process.env.PASS
+    }
+});
+
 
 var scrt=[];
-
 app.use(express.static("public"));
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
@@ -25,7 +33,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://admin-lmt:test123@cluster0-a1p6w.mongodb.net/userDB",{useUnifiedTopology: true,useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin:test123@cluster0-6ef3z.mongodb.net/userDB",{useUnifiedTopology: true,useNewUrlParser: true});
 mongoose.set("useCreateIndex",true);
 
 const userSchema= new mongoose.Schema({
@@ -74,35 +82,64 @@ app.get("/profile",function(req,res){
 
 app.get("/userHome",function(req,res){
   if(req.isAuthenticated()){
-     User.findById("5e6bb3c7556517566c65eb84",function(err,foundUser){
-       if(err){
-        console.log(err);
-       }else{
-         if(foundUser){
-           res.render('userHome',{ user: req.user, disc:foundUser.arr});
-         }
-       }
-      });
-  }else{
+    User.findById("5e7da275ee531b23cc448cad",function(err,foundUser){
+    if(err){
+       console.log(err);
+      }else{
+        if(foundUser){
+          res.render('userHome',{ user: req.user, disc:foundUser.arr});
+        }
+      }
+     });
+   }else{
    res.redirect("log_form");
    }
 });
 
+var bd={};
+var num=0;
+
+app.get("/verify",function(req,res){
+  res.render("otp");
+});
+
+app.post("/verify",function(req,res){
+  if(req.body.otp==num){
+    User.register({username:bd.username,gender:bd.gender,sem:bd.sem,phoneNo:bd.PhoneNo},bd.password,function(err,user){
+    if(err){
+      console.log(err);
+      res.redirect("reg_form");
+    }else{
+        res.redirect("log_form");
+    }
+  });
+ }else{
+   swal('OTP mismatch');
+   res.redirect("reg_form");
+}
+});
 app.post("/reg_form",function(req,res){
+  bd=req.body;
+  num=Math.floor((Math.random()*1000000)+1);
  if(req.body.password!=req.body.Password2){
-  Swal.fire('Password does not match.')
+  swal('Password does not match.')
    res.redirect("reg_form");
  }else{
-   User.register({username:req.body.username,gender:req.body.gender,sem:req.body.sem,phoneNo:req.body.PhoneNo},req.body.password,function(err,user){
-   if(err){
-     console.log(err);
-     res.redirect("reg_form");
-   }else{
-     passport.authenticate("local")(req,res,function(){
-       res.redirect("userHome");
-     });
+   const mailOption={
+   from : process.env.USER ,
+   to : req.body.username,
+   subject: "OTP verification",
+   html: "<h3>OPT is</h3> <h1>"+ num + "</h1>.<br> <p> Please Enter this Otp.</p>"
+ };
+
+ transporter.sendMail(mailOption, function(error, info){
+   if (error) {
+     console.log(error);
+   } else {
+     console.log('Email sent: ' + info.response);
    }
  });
+   res.redirect("verify");
  }
 });
 
@@ -138,7 +175,7 @@ app.post("/submit",function(req,res){
      date:today
    };
 
-  User.findById("5e6bb3c7556517566c65eb84",function(err,foundUser){
+  User.findById("5e7da275ee531b23cc448cad",function(err,foundUser){
      if(err){
       console.log(err);
      }else{
