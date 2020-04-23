@@ -30,8 +30,7 @@
        <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
        <div class="card-body">
         <h4 class="card-title"><%=item%></h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">Start</a>
+        <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
        </div>
        </div>
       <%})}else if(user.sem === "Sem4"){%>
@@ -40,8 +39,7 @@
           <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
           <div class="card-body">
            <h4 class="card-title"><%=item%></h4>
-           <p class="card-text">Some example text.</p>
-           <a href="#" class="btn btn-primary">Start</a>
+           <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
           </div>
           </div>
          <%})}else if(user.sem === "Sem5"){%>
@@ -50,8 +48,7 @@
              <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
              <div class="card-body">
               <h4 class="card-title"><%=item%></h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">Start</a>
+              <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
              </div>
              </div>
             <%})}else{%>
@@ -60,8 +57,7 @@
                 <img class="card-img-top" src="/img/<%= item %>.jpg" alt="Card image">
                 <div class="card-body">
                  <h4 class="card-title"><%= item %></h4>
-                 <p class="card-text">Some example text.</p>
-                 <a href="#" class="btn btn-primary">Start</a>
+                 <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
                 </div>
                 </div>
                <%})}%>
@@ -123,11 +119,9 @@
       <div class="card yi" style="width:300px">
       <div class="card-body">
        <h4 class="card-title yit">Sessional Syllabus</h4>
-       <marquee direction="up" scrollamount="3" onmouseover="stop()" onmouseout="start()">
-            <p class="card-text">Some example text.</p>
-               <p class="card-text">Some example text.</p>
-                  <p class="card-text">Some example text.</p>
-       </marquee>
+       <marquee style="height:100px;" direction="up" scrollamount="2" onmouseover="stop()" onmouseout="start()">
+           <p class="card-text" >Updated Soon</p>
+         </marquee>
   </div>
       </div>
     </div>
@@ -137,12 +131,9 @@
       <div class="card yi" style="width:300px">
       <div class="card-body">
        <h4 class="card-title yit">Assignments</h4>
-      <marquee direction="up" scrollamount="3" onmouseover="stop()" onmouseout="start()">
-        <p class="card-text">Some example text.</p>
-           <p class="card-text">Some example text.</p>
-              <p class="card-text">Some example text.</p>
-             <p class="card-text">Some example text.</p>
-      </marquee>
+      <marquee direction="up" style="height:100px;" scrollamount="2" onmouseover="stop()" onmouseout="start()">
+        <p class="card-text" >No Pending Assignment</p>
+            </marquee>
 
       </div>
       </div>

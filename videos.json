@@ -1,0 +1,24 @@
+[{
+  "Sub": "Database Management System",
+  "video": [{
+      "id": "A",
+      "name": "Difference between #DATA #INFORMATION #DATABASE and DATABASE MANAGEMENT SYSTEM",
+      "link": "https://www.youtube.com/embed/cKRnbP6dZwc"
+    },
+    {
+      "id": "B",
+      "name": "File processing system in dbms",
+      "link": "https://www.youtube.com/embed/CqI0X8fNn2I"
+    },
+    {
+      "id": "C",
+      "name": "Olap vs Oltp",
+      "link": "https://www.youtube.com/embed/kFQRrgHeiOo"
+    },
+    {
+      "id": "D",
+      "name": "Entity Relationship Model",
+      "link": "https://www.youtube.com/embed/iUApyIf2h-A"
+    }
+  ]
+}]

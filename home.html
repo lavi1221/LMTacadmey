@@ -53,22 +53,19 @@
            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
              <ul class="navbar-nav nav-pills">
                <li class="nav-item">
-                 <a class="nav-link" href="">Home</a>
+                 <a class="nav-link" href=">">Home</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="">About</a>
+                 <a class="nav-link" href="/about">About</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="">Courses</a>
+                 <a class="nav-link" href="#c">Courses</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="">Blog</a>
+                 <a class="nav-link" href="#team">Team</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="">Page</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="">Contact</a>
+                 <a class="nav-link"  data-toggle="modal" data-target="#myModal">Contact</a>
                </li>
 
              </ul>
@@ -79,6 +76,29 @@
          </nav>
 
       </div>
+      <form id="myModal" class=" modal fade" action="/contact" method="post" role="dialog">
+       <div class="modal-dialog">
+
+           <div class="modal-content">
+           <div class="modal-header">
+             <h4 class="modal-title">Contact Us</h4>
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+                <label for="Email">Please Enter Email Address for reply back</label>
+               <input  class="form-control" type="email" name="Email" value="" placeholder="Email Address" required><br>
+               <textarea class="form-control" name="name" rows="8" cols="70" resize="none" placeholder="Enter your message" required></textarea>
+          </div>
+       <div class="modal-footer">
+         <button type="submit" class="btn btn-info" name="email-send">Send</button>
+       </div>
+     </div>
+   </div>
+
+
+ </div>
+</form>
+
 
 
     </header>
@@ -93,7 +113,7 @@
            <div class="text-top">
              <h2 class="h2-top"  >All the courses you need</h2>
              <h1 class="h1-top"  >Welcome to our online university</h1>
-              <a href="#" class="btn academy-btn">Read More</a>
+              <a href="/about" class="btn academy-btn">Read More</a>
            </div>
            </div>
         </div>
@@ -102,7 +122,7 @@
            <div class="text-top">
              <h2 class="h2-top">All the courses you need</h2>
              <h1 class="h1-top">Welcome to our online university</h1>
-              <a href="#" class="btn academy-btn">Read More</a>
+              <a href="/about" class="btn academy-btn">Read More</a>
            </div>
            </div>
 
@@ -118,18 +138,18 @@
   </div>
 
 
-<div class="middle-section">
+<div id="c" class="middle-section">
     <div class="middle-1">
       <div class="container">
         <div class="row">
           <div class="col-4 pd-50 md-lg-2">
            <i class="fas fa-address-book bg"></i>
-            <h4 class="middle-text">Online Course</h4>
+            <h4 class="middle-text">Online Material</h4>
   <i class="fas fa-grip-lines-vertical"></i>
           </div>
           <div class="col-4 pd-50 md-lg-2">
                 <i class="fas fa-chalkboard-teacher"></i>
-              <h4 class="middle-text">Amazing Teacher</h4>
+              <h4 class="middle-text">All at one Place</h4>
               <i class="fas fa-grip-lines-vertical"></i>
           </div>
           <div class="col-4 pd-50 md-lg-2">
@@ -146,10 +166,10 @@
             <img class="card-img-top" src="/img/Computer Network.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Computer Network</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">It's semester 6th Subject which deals with various layers of networking. You will be learning IP addressing,How packets are transfered.</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop">  FREE</span> </small>
+              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 40+ Videos<i class="fas fa-star ii"></i>Ebooks & PDFs&nbsp <span class="pop"> Class Notes</span> </small>
             </div>
           </div>
 
@@ -159,10 +179,10 @@
             <img class="card-img-top " src="/img/Database Management System.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Database Management System</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">It's semester 5th Subject which deals with various data storage models. You will be learning Cool sql queries.</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop">  FREE</span></small>
+              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 100+ Videos<i class="fas fa-star ii"></i>Ebooks & PDFs&nbsp <span class="pop"> Class Notes</span></small>
             </div>
           </div>
 
@@ -275,9 +295,113 @@
 
     </div>
 
-<button class="btn btn-block bttn" type="button" id="less" data-toggle="collapse" data-target="#collapseExample" onclick='document.getElementById("less").innerHTML = (document.getElementById("less").innerHTML=="More Courses") ? "Less Courses" : "More Courses"' aria-expanded="false" aria-controls="collapseExample" >
+<button class="btn btn-block bttn" type="button" id="less" data-toggle="collapse" data-target="#collapseExample" onclick="change()" aria-expanded="false" aria-controls="collapseExample" >
     More Courses
   </button>
+ <br></br></br>
+  <section id="team" class="pb-5">
+   <div class="container">
+       <h5 class="section-title h1">OUR TEAM</h5>
+       <div class="row">
+
+           <div class="col-xs-12 col-sm-6 col-md-6">
+               <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                   <div class="mainflip">
+                       <div class="frontside">
+                           <div class="card">
+                               <div class="card-body text-center">
+                                   <p><img class=" img-fluid" src="/img/atul.jpg" alt="card image"></p>
+                                   <h4 class="card-title">Atul</h4>
+                                   <p class="card-text"> Co-founder</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="backside">
+                           <div class="card">
+                               <div class="card-body text-center mt-4">
+                                   <h4 class="card-title">Atul  kumar</h4>
+                                   <p class="card-text">A Btech graduate from Y.M.C.A Faridabad.A visioner  and a passionate  computer programmer.He has good coding skills and front end skills. </p>
+                                   <ul class="list-inline">
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/atul.atulin.kumar">
+                                               <i class="fa fa-facebook"></i>
+                                           </a>
+                                       </li>
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/atul62352535">
+                                               <i class="fa fa-twitter"></i>
+                                           </a>
+                                       </li>
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="#">
+                                               <i class="fa fa-skype"></i>
+                                           </a>
+                                       </li>
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="#">
+                                               <i class="fa fa-google"></i>
+                                           </a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-xs-12 col-sm-6 col-md-6">
+               <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                   <div class="mainflip">
+                       <div class="frontside">
+                           <div class="card">
+                               <div class="card-body text-center">
+                                   <p><img class=" img-fluid" src="/img/lavish.jpg" alt="card image"></p>
+                                   <h4 class="card-title">Lavish Varshney</h4>
+                                   <p class="card-text">Co-founder</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="backside">
+                           <div class="card">
+                               <div class="card-body text-center mt-4">
+                                   <h4 class="card-title">Lavish Varshney</h4>
+                                   <p class="card-text">Lavish is btech graduate from  Y.M.C.A Faridabad.He has indepth  knowledge of Computer Science Core Subjects.He is also a passionate web dvevloper and He loves to  help others.</p>
+                                   <ul class="list-inline">
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="#">
+                                               <i class="fa fa-facebook"></i>
+                                           </a>
+                                       </li>
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="#">
+                                               <i class="fa fa-twitter"></i>
+                                           </a>
+                                       </li>
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="#">
+                                               <i class="fa fa-skype"></i>
+                                           </a>
+                                       </li>
+                                       <li class="list-inline-item">
+                                           <a class="social-icon text-xs-center" target="_blank" href="#">
+                                               <i class="fa fa-google"></i>
+                                           </a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+
+       </div>
+   </div>
+</section>
+
+
 
   <div class="testimonial">
        <div class="container">
@@ -285,7 +409,7 @@
               <div class="col-12">
                   <div class="section-heading" >
                       <span>our testimonials</span>
-                      <h3>See what our satisfied customers are saying about us</h3>
+                      <h3>See what our Students have to say about us.</h3>
                   </div>
               </div>
           </div>
@@ -293,13 +417,13 @@
               <div class="col-12 col-md-6">
                   <div class="single-testimonial  d-flex">
                       <div class="testimonial-thumb">
-                          <img src="/img/test1.jpg" class="test-img" alt="">
+                          <img src="/img/test1.jpeg" class="test-img" alt="">
                       </div>
                       <div class="testimonial-content">
                           <h5>Great Content</h5>
                           <p class="p-test1">
-                            LMT videos are awesome. They helped our entire two divisions of TE computer engineering for spcc paper because your teaching method is awesome.</p>
-                          <h6><span>Maria Smith,</span> Student</h6>
+                            LMT videos are awesome. They helped our entire two divisions of TE computer engineering for spcc paper because your teaching method is awesome.I am student of differet universithy  but still i liked the quailty of study  material</p>
+                          <h6><span>Deepanshu Mathur,</span> Student</h6>
                       </div>
                   </div>
               </div>
@@ -310,8 +434,8 @@
                       </div>
                       <div class="testimonial-content">
                           <h5>Easy and user friendly courses</h5>
-                          <p class="p-test2">I thing our typical engineering education system stress out most of the student so it is best to learn something practical during college from many resources and for university exam refer some crash course ...</p>
-                          <h6><span>Shawn Gaines,</span> Student</h6>
+                          <p class="p-test2">this really helped me to  prepare for the exams just one noght before.Thanks to  LMT , a life savier...</p>
+                          <h6><span>Kunal,</span> Student</h6>
                       </div>
                   </div>
               </div>
@@ -324,7 +448,7 @@
                           <h5>I just love the courses here</h5>
                           <p class="p-test3">“one of the best online teachers! so authentic, real and simple!
 i thought i will fail in subjects like SC or DSP but after Lmt.. the studying process became smooth! its was not ..</p>
-                          <h6><span>Rossy Cooper,</span> Student</h6>
+                          <h6><span>Ayush Garg,</span> Student</h6>
                       </div>
                   </div>
               </div>
@@ -337,18 +461,12 @@ i thought i will fail in subjects like SC or DSP but after Lmt.. the studying pr
                           <h5>One good academy</h5>
                           <p class="p-test4">“Your are doing good job, it’s reduce our time for collecting study material.
 Thank you”</p>
-                          <h6><span>Jane Williams,</span> Student</h6>
+                          <h6><span>Durgesh Dutt,</span> Student</h6>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="row">
-              <div class="col-12">
-                  <div class="text-center">
-                      <a href="#" class="btn  see">See More</a>
-                  </div>
-              </div>
-          </div>
+
       </div>
   </div>
   <footer id="footer">
@@ -360,6 +478,15 @@ Thank you”</p>
   <p>© Copyright 2020 LMT</p>
 
   </footer>
-
+<script type="text/javascript">
+   function change(){
+   var t = document.getElementById("less");
+    if(t.innerHTML == "More Courses"){
+      t.innerHTML= "Less Courses";
+    }else{
+      t.innerHTML= "More Courses";
+    }
+  }
+</script>
   </body>
 </html>

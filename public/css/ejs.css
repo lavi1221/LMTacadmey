@@ -125,12 +125,17 @@ font-family: serif;
   background: rgb(143,98,8);
   background: linear-gradient(90deg, rgba(143,98,8,1) 0%, rgba(183,66,8,1) 0%, rgba(255,196,0,1) 84%);
   border: 2px solid #6b2e05;
-  margin: 2%;
+  min-height: 200px;
 }
 .yit{
   color:white;
   text-shadow: 5px 2px 4px rgba(2,0,36,1);
   text-align: center;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,26,1) 51%, rgba(255,0,18,1) 100%);
-  padding: 10px;
+  padding: 10px 10px 0;
+}
+
+.card-img-top{
+  height : 200px;
+  width:100%;
 }

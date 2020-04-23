@@ -10,6 +10,7 @@ const swal=require("sweetalert2");
 const session =require("express-session");
 const date =require("date-and-time");
 const nodemailer=require("nodemailer");
+const fs = require('fs');
 
 const app=express();
 const transporter=nodemailer.createTransport({
@@ -64,12 +65,20 @@ app.get("/",function(req,res){
   res.sendFile(__dirname+"/home.html");
 });
 
+app.get("/home",function(req,res)
+{
+  res.redirect("/");
+});
 app.get("/reg_form",function(req,res){
   res.sendFile(__dirname+"/reg_form.html");
 });
 
 app.get("/log_form",function(req,res){
   res.sendFile(__dirname+"/log_form.html");
+});
+app.get("/about",function(req,res)
+{
+  res.render("about");
 });
 
 app.get("/profile",function(req,res){
@@ -79,6 +88,46 @@ app.get("/profile",function(req,res){
   res.redirect("log_form");
  }
 });
+
+app.get("/userHome/:customSub",function(req,res){
+  if(req.isAuthenticated()){
+    var val=req.params.customSub;
+    res.render("resource.ejs",{
+      subject: val
+    });
+  }else{
+  res.redirect("log_form");
+  }
+
+});
+
+
+
+app.get("/userHome/resource/:customSub",function(req,res){
+  if(req.isAuthenticated()){
+    fs.readFile('videos.json',function(error,data){
+      if(error){
+        res.status(500).end();
+      }else{
+        var val=req.params.customSub;
+        var newData = JSON.parse(data);
+        for (var i = 0; i < newData.length; i++){
+            if (newData[i].Sub == val){
+            break;
+            }
+        }
+
+        res.render('video.ejs',{
+          videos : newData[i]
+        })
+      }
+    });
+
+  }else{
+  res.redirect("log_form");
+  }
+});
+
 
 app.get("/userHome",function(req,res){
   if(req.isAuthenticated()){
@@ -158,7 +207,24 @@ app.post("/log_form",function(req,res){
      }
    });
 });
+app.post("/contact",function(req,res){
+  const mailOption={
+  from : process.env.USER ,
+  to : process.env.USER,
+  subject: req.body.Email+" has sent a message",
+  html: "<h3>Message is</h3> <p>" + req.body.name +"</p>."
+};
 
+transporter.sendMail(mailOption, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+
+res.redirect("/");
+});
 app.get("/logout",function(req,res){
   req.logout();
   res.redirect("/");

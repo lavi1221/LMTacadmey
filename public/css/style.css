@@ -60,16 +60,18 @@ justify-content: space-between;
   padding: 5px 20px;
 }
 .top-section-1{
-  background-image:url("/img/bg-1.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  min-height: 600px;
+  background-image: linear-gradient(120deg, rgba(246, 211, 101, 0.7) 0%,rgba(253, 160, 133, 0.8) 100%), url("/img/bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  height: 700px;
 }
 .top-section-2{
-  background-image:url("/img/bg-2.jpg");
+  background-image: linear-gradient(to top, rgba(251, 194, 235, 0.7) 0%, rgba(166, 193, 238, 0.8) 100%),url("/img/bg-2.jpg");
+  background-position: right;
   background-repeat: no-repeat;
-  background-size:cover;
-  min-height: 600px;
+  background-size: cover;
+  height: 700px;
 }
 .text-top{
   display: inline-block;
@@ -159,7 +161,7 @@ color: #ffffff;
   font-size: 15px;
 }
 .pop{
-  font-size: 20px;
+  font-size: 14px;
   color:red;
   font-family: serif;
   font-weight: bold;
@@ -253,3 +255,144 @@ span{
     margin:1.5%;
     color: black;
   }
+  #team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+}
+.jumbotron{
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+  margin: auto;
+  width: 60%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.aboutUs{
+  text-align:center;
+  color:red;
+  font-size:75px;
+  font-weight:bold;
+  text-shadow: 2px 2px 5px blue;
+  font-family: 'Abril Fatface', cursive;"
+}
