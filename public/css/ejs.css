@@ -139,3 +139,40 @@ font-family: serif;
   height : 200px;
   width:100%;
 }
+
+.lg{
+  height:500px;
+  overflow: hidden scroll;
+}
+
+.vid{
+  background-image: url("/img/vid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+iframe{
+  border: 3px solid black;
+  border-radius: 2%;
+}
+.res{
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.sub-head{
+  text-align:center;
+  color:#F46792;
+  text-shadow: 5px 2px 4px rgba(2,0,36,1);
+  font-size:55px;
+  font-family: "Dancing Script",sans-serif;
+}
+.lay{
+  margin-left: : 10%;
+  margin-top: 3%;
+}
+.ty{
+    height: 145px;;
+    border: 0 solid black;
+    border-radius: 3%;
+    padding: 5%;
+}

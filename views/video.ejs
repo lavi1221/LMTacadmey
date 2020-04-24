@@ -1,26 +1,28 @@
 <%- include('partials/header') %>
+<div class="vid">
+
 
 <div class="container">
   <div class="row">
     <div class="col-4">
       <%var j=0%>
-      <div class="list-group" id="list-tab" role="tablist">
+      <div class="list-group lg" id="list-tab" role="tablist">
         <% videos.video.forEach(function(item){ %>
           <% if(j == 0 ){ %>
-            <a class="list-group-item list-group-item-action active"  data-toggle="list" href="#<%= item.id%>" role="tab" ><%= item.name%></a>
+            <a class="list-group-item list-group-item-action  active"  data-toggle="list" href="#<%= item.id%>" role="tab" ><%= item.name%></a>
             <%} else{%>
-        <a class="list-group-item list-group-item-action" data-toggle="list" href="#<%= item.id%>" role="tab" ><%= item.name%></a>
+        <a class="list-group-item list-group-item-action " data-toggle="list" href="#<%= item.id%>" role="tab" ><%= item.name%></a>
         <%} j++; }); %>
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-8 pd-0 mr-0">
 <%var i=0%>
 
       <div class="tab-content" id="nav-tabContent">
          <% videos.video.forEach(function(item){ %>
            <% if(i == 0 ){ %>
              <div class="tab-pane fade show active" id="<%= item.id%>" role="tabpanel" >
-               <iframe style="width:100%;height:400px;" src="<%= item.link%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <iframe style="width:100%;height:500px;" src="<%= item.link%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              </div>
           <%} else{%>
             <div class="tab-pane fade" id="<%= item.id%>" role="tabpanel" >
@@ -32,5 +34,5 @@
     </div>
   </div>
 </div>
-
+</div>
 <%- include('partials/footer') %>

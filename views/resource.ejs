@@ -1,21 +1,23 @@
 <%- include('partials/header') %>
+ <div class="res">
 
 
-         <h1 style="text-align:center; color:#43d8c9; font-size:75px;"><%=subject %></h1>
 
-        <div id="layout">
+         <h1 class="sub-head"><%=subject %></h1>
+
+        <div class='container lay'>
           <div class="row">
              <div class="col-md-6 col-sm-12">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
                       <div class="col-md-4">
-                        <img src="/img/p.jpg" class="card-img" alt="...">
+                        <img src="/img/p.jpg" class="card-img ty" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
                           <h5 class="card-title">Question papers</h5>
                           <p class="card-text">Last 5 years questions.</p>
-                          <a class="btn btn-primary" href="#">click to  get them</a>
+                          <a class="btn btn-danger" href="#">click to  get them</a>
                         </div>
                       </div>
                     </div>
@@ -25,13 +27,13 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
                       <div class="col-md-4">
-                        <img src="/img/v.jpg" class="card-img" alt="...">
+                        <img src="/img/v.jpg" class="card-img ty" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
                           <h5 class="card-title">Videos</h5>
-                          <p class="card-text">videos by sanchit jain </p>
-                          <a class="btn btn-primary" href="/userHome/resource/<%=subject%>">click to watch</a>
+                          <p class="card-text">Selected Videos </p>
+                          <a class="btn btn-danger" href="/userHome/resource/<%=subject%>">click to watch</a>
                         </div>
                       </div>
                     </div>
@@ -42,7 +44,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
                       <div class="col-md-4">
-                        <img src="/img/b.jpg" class="card-img" alt="...">
+                        <img src="/img/b.jpg" class="card-img ty" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
@@ -50,7 +52,7 @@
                             <ul>
                              <li> <a href="">book1</a><br></li>
                              <li><a href="">book2</a><br></li>
-                             <li> <a href="#">book3</a></li>
+                             <li> <a href="">book3</a></li>
                             </ul>
                         </div>
                       </div>
@@ -62,15 +64,14 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
                       <div class="col-md-4">
-                        <img src="/img/d.jpg" class="card-img" alt="...">
+                        <img src="/img/d.jpg" class="card-img ty" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
                           <h5 class="card-title">Notes</h5>
                           <ul>
-                            <li> <a href="">book1</a><br></li>
-                            <li><a href="">book2</a><br></li>
-                            <li> <a href="#">book3</a></li>
+                            <li> <a href="#hwnt">Note 1</a><br></li>
+                            <li><a href="#hwntt">Note 2</a><br></li>
                            </ul>
 
                         </div>
@@ -81,9 +82,16 @@
           </div>
        </div>
          <br>
-         <button  style="margin-left:690px;" class="btn btn-primary">back</button>
+    
 
 
 
+
+
+
+
+</div>
+
+<a href="/userHome"  style="margin-left:690px;" class="btn btn-primary">back</a>
 
 <%- include('partials/footer') %>

@@ -1,24 +1,583 @@
-[{
-  "Sub": "Database Management System",
-  "video": [{
-      "id": "A",
-      "name": "Difference between #DATA #INFORMATION #DATABASE and DATABASE MANAGEMENT SYSTEM",
-      "link": "https://www.youtube.com/embed/cKRnbP6dZwc"
-    },
-    {
-      "id": "B",
-      "name": "File processing system in dbms",
-      "link": "https://www.youtube.com/embed/CqI0X8fNn2I"
-    },
-    {
-      "id": "C",
-      "name": "Olap vs Oltp",
-      "link": "https://www.youtube.com/embed/kFQRrgHeiOo"
-    },
-    {
-      "id": "D",
-      "name": "Entity Relationship Model",
-      "link": "https://www.youtube.com/embed/iUApyIf2h-A"
-    }
-  ]
-}]
+[
+  {
+    "Sub": "Database Management System",
+    "video": [{
+        "id": "A",
+        "name": "Difference between #DATA #INFORMATION #DATABASE and DATABASE MANAGEMENT SYSTEM",
+        "link": "https://www.youtube.com/embed/cKRnbP6dZwc"
+      },
+      {
+        "id": "B",
+        "name": "File processing system in dbms",
+        "link": "https://www.youtube.com/embed/CqI0X8fNn2I"
+      },
+      {
+        "id": "C",
+        "name": "Olap vs Oltp",
+        "link": "https://www.youtube.com/embed/kFQRrgHeiOo"
+      },
+      {
+        "id": "D",
+        "name": "Entity Relationship Model",
+        "link": "https://www.youtube.com/embed/iUApyIf2h-A"
+      },
+      {
+        "id": "E",
+        "name": "Entity Set Definition",
+        "link": "https://www.youtube.com/embed/jbl5rWNP5hU"
+      },
+      {
+        "id": "F",
+        "name": "Types of attributes in ER diagram",
+        "link": "https://www.youtube.com/embed/7mi_3zi66C8"
+      },
+      {
+        "id": "G",
+        "name": "Relationship in a ER Diagram in DBMS ",
+        "link": "https://www.youtube.com/embed/YvQtgE6R_q0"
+      },
+      {
+        "id": "H",
+        "name": "Degree of a Relationship in a ER Diagram in DBMS",
+        "link": "https://www.youtube.com/embed/JGOvqCFrldU"
+      },
+      {
+        "id": "I",
+        "name": "Cardinality Ratio and Mapping Cardinalities in ER diagram",
+        "link": "https://www.youtube.com/embed/XUokY6sA3UE"
+      },
+      {
+        "id": "J",
+        "name": "Participation constraints in dbms in hindi er diagram",
+        "link": "https://www.youtube.com/embed/sWZw69Wf5SQ"
+      },
+      {
+        "id": "K",
+        "name": "FunctionalDependency in DBMS ",
+        "link": "https://www.youtube.com/embed/wez3fXrjBAE"
+      },
+      {
+        "id": "L",
+        "name": "Practice Problems on Functional Dependency in DBMS",
+        "link": "https://www.youtube.com/embed/d37Ct1gHmsU"
+      },
+      {
+        "id": "M",
+        "name": " Armstrong's Axioms in DBMS ",
+        "link": "https://www.youtube.com/embed/vs65S6Nku5g"
+      },
+      {
+        "id": "N",
+        "name": " Closure Set of Attributes in DBMS ",
+        "link": "https://www.youtube.com/embed/fT0QMtgqPrU"
+      },
+      {
+        "id": "O",
+        "name": " Equivalence on set of functional dependencies",
+        "link": "https://www.youtube.com/embed/NeITRksKLzs"
+      },
+      {
+        "id": "P",
+        "name": "Practice Problems on Equivalence on set of functional",
+        "link": "https://www.youtube.com/embed/0XmHRycmrp0"
+      },
+      {
+        "id": "Q",
+        "name": "Minimal set of Functional Dependencies in DBMS",
+        "link": "https://www.youtube.com/embed/o0GQQFu-5C0"
+      },
+      {
+        "id": "R",
+        "name": "Practice questions on Minimal set of Functional Dependency",
+        "link": "https://www.youtube.com/embed/_-F6QfdheEk"
+      },
+      {
+        "id": "S",
+        "name": "Key in DBMS in HINDI",
+        "link": "https://www.youtube.com/embed/8N2Z2WPQFcU"
+      },
+      {
+        "id": "T",
+        "name": "Super Key Candidate Key Primary Key in DBMS",
+        "link": "https://www.youtube.com/embed/MhvAcuNvvNk"
+      },
+      {
+        "id": "U",
+        "name": "finding number of candidate key in DBMS",
+        "link": "https://www.youtube.com/embed/x_inLVXPlSU"
+      },
+      {
+        "id": "V",
+        "name": "Practice questions on finding number of candidate key",
+        "link": "https://www.youtube.com/embed/33ek39nWkVA"
+      },
+      {
+        "id": "W",
+        "name": "Insertion Deletion and Updation anomalies in DBMS ",
+        "link": "https://www.youtube.com/embed/K5P-2-oWXqs"
+      },
+      {
+        "id": "X",
+        "name": "Normalization in database",
+        "link": "https://www.youtube.com/embed/px7HV91fx2I"
+      },
+      {
+        "id": "Y",
+        "name": "FIST NORMAL  FORM  ",
+        "link": "https://www.youtube.com/embed/CedOasDoe-w"
+      },
+      {
+        "id": "Z",
+        "name": "SecondNormalForm #2NF Normalization",
+        "link": "https://www.youtube.com/embed/80CcB9_HSxU"
+      },
+      {
+        "id": "AA",
+        "name": "Reason for second normal form in dbms",
+        "link": "https://www.youtube.com/embed/Wx5CzybyLXA"
+      },
+      {
+        "id": "AB",
+        "name": "how to normalize or decompose a relation into 2nf",
+        "link": "https://www.youtube.com/embed/yIN6k57OB3U"
+      },
+      {
+        "id": "AC",
+        "name": "3nf in dbms in hindi third normal form in dbms",
+        "link": "https://www.youtube.com/embed/aOZ5z7z9y-g"
+      },
+      {
+        "id": "AD",
+        "name": "Third Normal Form decomposition in dbms",
+        "link": "https://www.youtube.com/embed/9H4aJqYyd9s"
+      },
+      {
+        "id": "AE",
+        "name": "BCNF in DBMS in HINDI ",
+        "link": "https://www.youtube.com/embed/cm1DYCQhFZw"
+      },
+      {
+        "id": "AF",
+        "name": "BCNF in DBMS in HINDI with example | boyce codd normal",
+        "link": "https://www.youtube.com/embed/iuJtkzoNtbg"
+      },
+      {
+        "id": "AG",
+        "name": "how to find identify normal form in dbms in hindi practice problems question answers",
+        "link": "https://www.youtube.com/embed/mzxnbsmIRNw"
+      },
+      {
+        "id": "AH",
+        "name": " how to find identify normal form in dbms in hindi practice",
+        "link": "https://www.youtube.com/embed/oeWSmSH5YeI"
+      },
+      {
+        "id": "AI",
+        "name": "how to find identify normal form in dbms ",
+        "link": "https://www.youtube.com/embed/hL9-RDzvO-0"
+      },
+      {
+        "id": "AJ",
+        "name": " Lossless Join Decomposition",
+        "link": "https://www.youtube.com/embed/M5OClnF_mlA"
+      },
+      {
+        "id": "AK",
+        "name": "Example Practice Problem of Lossless Join Decomposition",
+        "link": "https://www.youtube.com/embed/3aQ0dnZHaRQ"
+      },
+      {
+        "id": "AL",
+        "name": "Dependency preserving decomposition in dbms",
+        "link": "https://www.youtube.com/embed/isOLwsdB4Ns"
+      },
+      {
+        "id": "AM",
+        "name": "How to normalize a relation table ",
+        "link": "https://www.youtube.com/embed/I3Zwz4lKmDU"
+      },
+      {
+        "id": "AN",
+        "name": " File structure in dbms",
+        "link": "https://www.youtube.com/embed/RgYU5r9A5TU"
+      },
+      {
+        "id": "AO",
+        "name": " File Structure in DBMS 2",
+        "link": "https://www.youtube.com/embed/D7pmQDnjcV4"
+      },
+      {
+        "id": "AP",
+        "name": "Indexing in dbms",
+        "link": "https://www.youtube.com/embed/SxHX1T53n_A"
+      },
+      {
+        "id": "AQ",
+        "name": "Types of Indexing in DBMS ",
+        "link": "https://www.youtube.com/embed/O-Mbn6VI1zc"
+      },
+      {
+        "id": "AR",
+        "name": "Primary Indexing ",
+        "link": "https://www.youtube.com/embed/L-THExvsv0s"
+      },
+      {
+        "id": "AS",
+        "name": "Numerical on Primary Indexing",
+        "link": "https://www.youtube.com/embed/mbjE4WsWYCA"
+      },
+      {
+        "id": "AT",
+        "name": "Clustering Index ",
+        "link": "https://www.youtube.com/embed/54gUz7QqE4o"
+      },
+      {
+        "id": "AU",
+        "name": "Secondary Index",
+        "link": "https://www.youtube.com/embed/SoYYwKXtCC0"
+      },
+      {
+        "id": "AV",
+        "name": " Numerical on Secondary Index",
+        "link": "https://www.youtube.com/embed/Tmbv15xiIPo"
+      },
+      {
+        "id": "AW",
+        "name": "Secondary Vs Primary Index ",
+        "link": "https://www.youtube.com/embed/6_94Fm_yNAM"
+      },
+      {
+        "id": "AX",
+        "name": "Transaction and Concurrency Control in DBMS ",
+        "link": "https://www.youtube.com/embed/a6KIAX5Aubg"
+      },
+      {
+        "id": "AY",
+        "name": "Transaction in Dbms",
+        "link": "https://www.youtube.com/embed/quz6gV7oDFI"
+      },
+      {
+        "id": "AZ",
+        "name": "ACID properties in DBMS",
+        "link": "https://www.youtube.com/embed/qMBQCDTVROc"
+      },
+      {
+        "id": "BA",
+        "name": "Transaction states",
+        "link": "https://www.youtube.com/embed/914rYy0Djrg"
+      },
+      {
+        "id": "BB",
+        "name": "Advantage of concurrency ",
+        "link": "https://www.youtube.com/embed/XrHzsxLbLh4"
+      },
+      {
+        "id": "BC",
+        "name": " Dirty Read Problem in DBMS",
+        "link": "https://www.youtube.com/embed/CPOfYF0Ya6E"
+      },
+      {
+        "id": "BD",
+        "name": " Unrepeatable Read Problem in DBMS ",
+        "link": "https://www.youtube.com/embed/l0177OcTTdk"
+      },
+      {
+        "id": "BE",
+        "name": "Phantom Read Problem in DBMS",
+        "link": "https://www.youtube.com/embed/-FyMthiA1kU"
+      },
+      {
+        "id": "BF",
+        "name": "Lost Update Problem in DBMS ",
+        "link": "https://www.youtube.com/embed/o7RUUgHS3ck"
+
+      },
+      {
+        "id": "BG",
+        "name": "Serial Schedule and Non Serial Schedule in DBMS ",
+        "link": "https://www.youtube.com/embed/XCLA0cjk0o8"
+      },
+      {
+        "id": "BH",
+        "name": "Conflict Serializability in DBMS",
+        "link": "https://www.youtube.com/embed/vBo0UZl_VUM"
+      },
+      {
+        "id": "BI",
+        "name": "Practice Questions on Conflict Serializability ",
+        "link": "https://www.youtube.com/embed/QkROSmKbVFQ"
+      },
+      {
+        "id": "BJ",
+        "name": "Previous year question on Conflict Serializability",
+        "link": "https://www.youtube.com/embed/6feqtT3e-vA"
+      },
+      {
+        "id": "BK",
+        "name": "View Serializability in DBMS",
+        "link": "https://www.youtube.com/embed/Ewzmv2jBlmM"
+      },
+      {
+        "id": "BL",
+        "name": " Practice Problem on View Serializability ",
+        "link": "https://www.youtube.com/embed/FJteasXARxg"
+
+      },
+      {
+        "id": "BM",
+        "name": "Recoverable Schedule in DBMS",
+        "link": "https://www.youtube.com/embed/fCuEd3N9Nrs"
+      },
+      {
+        "id": "BN",
+        "name": " Cascadeless Schedule in DBMS",
+        "link": "https://www.youtube.com/embed/qH2iYtuJEwQ"
+      },
+      {
+        "id": "BO",
+        "name": "Strict Schedule in DBMS",
+        "link": "https://www.youtube.com/embed/MvLHkPCjCtk"
+      },
+      {
+        "id": "BP",
+        "name": "Concurencyy",
+        "link": "https://www.youtube.com/embed/fTRF3cr10RQ"
+      },
+      {
+        "id": "BQ",
+        "name": "TimeStampingProtocol in #ConcurrencyControlTechniques #Transactionn",
+        "link": "https://www.youtube.com/embed/k0Tuf2weFyA"
+      },
+      {
+        "id": "BR",
+        "name": "PropertiesofTimeStampingProtocols #TimeStampingProtocols #Transaction",
+        "link": "https://www.youtube.com/embed/LyTjtXtfBlM"
+      },
+      {
+        "id": "BS",
+        "name": "#ThomasWriteRule in #TimeStampingProtocol in #Transaction ",
+        "link": "https://www.youtube.com/embed/uLcEOs24Q3s"
+      },
+      {
+        "id": "BT",
+        "name": " #LockBasedProtocol #ConcurrencyControlTechnique #Transaction in DBMS ",
+        "link": "https://www.youtube.com/embed/44Uc6ohuOAk"
+      },
+      {
+        "id": "BU",
+        "name": "Properties of lock  base ",
+        "link": "https://www.youtube.com/embed/9aHA73fyt2g"
+      },
+      {
+        "id": "BV",
+        "name": "#2PhaseLockingProtocol #2PL #GrowingandShrinkingPhase",
+        "link": "https://www.youtube.com/embed/7mi_3zi66C8"
+      },
+      {
+        "id": "BW",
+        "name": "2-PhaseLockingConservative #Static2PL #ConcurrencyControlTechnique",
+        "link": "https://www.youtube.com/embed/VwZ58AvwYb0"
+      },
+      {
+        "id": "BX",
+        "name": "2-PhaseLockingRigorous #R2PL #Concurrency control technique",
+        "link": "https://www.youtube.com/embed/SR18TdBE2n4"
+      },
+      {
+        "id": "BY",
+        "name": "#Strict2PL #Strict2PhaseLocking #ConcurrencyControlTechnique",
+        "link": "https://www.youtube.com/embed/V4RouV433_Y"
+      },
+      {
+        "id": "BZ",
+        "name": "#GraphBasedProtocol #tTansaction and #ConcurrencyControlTechnique",
+        "link": "https://www.youtube.com/embed/ESsb6gqoIdc"
+      },
+      {
+        "id": "CA",
+        "name": " Tree Protocol transaction and concurrency control technique",
+        "link": "https://www.youtube.com/embed/uQrJbA9_WNU"
+      },
+      {
+        "id": "CB",
+        "name": "Properties in tree based Protocol transaction and concurrency control technique",
+        "link": "https://www.youtube.com/embed/Nk291GYi_t4"
+      },
+      {
+        "id": "CC",
+        "name": "Deadlock handling in transaction and concurrency technique",
+        "link": "https://www.youtube.com/embed/Iz66t1uyYIM"
+      },
+      {
+        "id": "CD",
+        "name": "Deadlock prevention in transaction and concurrency control",
+        "link": "https://www.youtube.com/embed/-r734q6sSa0"
+      },
+      {
+        "id": "CE",
+        "name": " Query language in dbms in hindi relational algebra calculus structured query language",
+        "link": "https://www.youtube.com/embed/uZogMFWBGSg"
+      },
+      {
+        "id": "CF",
+        "name": " Relational algebra in dbms in hindi operations basics query language fundamental operator",
+        "link": "https://www.youtube.com/embed/AepLj_C4ywM"
+      },
+      {
+        "id": "CG",
+        "name": "Select operation in DBMS",
+        "link": "https://www.youtube.com/embed/z0dzM7Dadi8"
+      },
+      {
+        "id": "CH",
+        "name": " Select operation in DBMS.2",
+        "link": "https://www.youtube.com/embed/PJkHEdG8E-A"
+      },
+      {
+        "id": "CI",
+        "name": "Project operation in DBMS ",
+        "link": "https://www.youtube.com/embed/Cob3hPUdrJk"
+      },
+      {
+        "id": "CJ",
+        "name": " select and project operation in relational algebra ",
+        "link": "https://www.youtube.com/embed/iOJlmwXzDB4"
+      },
+      {
+        "id": "CK",
+        "name": "union intersection and set difference operator",
+        "link": "https://www.youtube.com/embed/c-FqvuGIi-8"
+      },
+      {
+        "id": "CL",
+        "name": " Cartesian Product or Cross Product",
+        "link": "https://www.youtube.com/embed/VJp27dmRxXs"
+      },
+      {
+        "id": "CM",
+        "name": "Practice problems on Cartesian Product or Cross Product",
+        "link": "https://www.youtube.com/embed/CHwLkUlq-vE"
+      }
+
+    ]
+  },
+  {
+    "Sub": "Compiler Design",
+    "video": [{
+        "id": "A",
+        "name": "Introduction and various phases of compiler",
+        "link": "https://www.youtube-nocookie.com/embed/Qkwj65l_96I"
+      },
+      {
+        "id": "B",
+        "name": "Introduction to lexical analyser and Grammars",
+        "link": "https://www.youtube-nocookie.com/embed/WccZQSERfCM"
+      },
+      {
+        "id": "C",
+        "name": "Ambiguous grammars and making them unambiguous",
+        "link": "https://www.youtube-nocookie.com/embed/9vmhcBpZDcE"
+      },
+      {
+        "id": "D",
+        "name": "Elimination of left recursion and left factoring the grammars",
+        "link": "https://www.youtube-nocookie.com/embed/3_VCoBfrt9c"
+      },
+      {
+        "id": "E",
+        "name": "Introduction to parsers and LL(1) parsing",
+        "link": "https://www.youtube-nocookie.com/embed/N9UuAPU6DAg"
+      },
+      {
+        "id": "F",
+        "name": "Examples on how to find first and follow in LL(1)",
+        "link": "https://www.youtube-nocookie.com/embed/_uSlP91jmTM"
+      },
+      {
+        "id": "G",
+        "name": "Construction of LL(1) parsing table",
+        "link": "https://www.youtube-nocookie.com/embed/R1ZlWEZWMKk"
+      },
+      {
+        "id": "H",
+        "name": "Recursive descent parser",
+        "link": "https://www.youtube-nocookie.com/embed/SH5F-rwWEog"
+      },
+      {
+        "id": "I",
+        "name": "Operator grammar and Operator precedence parser",
+        "link": "https://www.youtube-nocookie.com/embed/n5UWAaw_byw"
+      },
+      {
+        "id": "J",
+        "name": "LR parsing, LR(0) items and LR(0) parsing table",
+        "link": "https://www.youtube-nocookie.com/embed/APJ_Eh60Qwo"
+      },
+      {
+        "id": "K",
+        "name": "LR(0) pasing example and SLR(1) table",
+        "link": "https://www.youtube-nocookie.com/embed/0kiTNN2kHyY"
+      },
+      {
+        "id": "L",
+        "name": "Examples of LR(0) and SLR(1)",
+        "link": "https://www.youtube-nocookie.com/embed/MIg2ymmMn4k"
+      },
+      {
+        "id": "M",
+        "name": "Examples of LR(0) and SLR(1)",
+        "link": "https://www.youtube-nocookie.com/embed/5s4CWn6GiwY"
+      },
+      {
+        "id": "N",
+        "name": "CLR(1) and LALR(1) Parsers",
+        "link": "https://www.youtube-nocookie.com/embed/VSkfnRfNuwI"
+      },
+      {
+        "id": "O",
+        "name": "conflicts and examples of CLR(1) and LALR(1)",
+        "link": "https://www.youtube-nocookie.com/embed/Nxj0g1mk5Ak"
+      },
+      {
+        "id": "L",
+        "name": "Examples of LR(0) and SLR(1)",
+        "link": "https://www.youtube-nocookie.com/embed/MIg2ymmMn4k"
+      },
+      {
+        "id": "M",
+        "name": "Examples of LR(0) and SLR(1)",
+        "link": "https://www.youtube-nocookie.com/embed/5s4CWn6GiwY"
+      },
+      {
+        "id": "N",
+        "name": "CLR(1) and LALR(1) Parsers",
+        "link": "https://www.youtube-nocookie.com/embed/VSkfnRfNuwI"
+      },
+      {
+        "id": "O",
+        "name": "conflicts and examples of CLR(1) and LALR(1)",
+        "link": "https://www.youtube-nocookie.com/embed/Nxj0g1mk5Ak"
+      },
+      {
+        "id": "P",
+        "name": "Examples of CLR(1) and LALR(1) and comparison of all the parsers",
+        "link": "https://www.youtube-nocookie.com/embed/1XD2wk52-Cs"
+      },
+      {
+        "id": "Q",
+        "name": "Syntax directed translation examples",
+        "link": "https://www.youtube-nocookie.com/embed/queUceGJqh0"
+      },
+      {
+        "id": "R",
+        "name": "Examples of SDT",
+        "link": "https://www.youtube-nocookie.com/embed/fmRgKPLEROg"
+      },
+      {
+        "id": "S",
+        "name": "S attributed and L attributed definitions",
+        "link": "https://www.youtube-nocookie.com/embed/rdnAJBoFKOw"
+      }
+    ]
+  }
+]

@@ -17,65 +17,94 @@
      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
-    <div class="navigation-section">
 
-      <nav class="navbar navbar-expand-lg bg-light">
-        <a class="navbar-brand "></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <header class="header-area">
 
-        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-          <ul class="navbar-nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link" href="/home">Home</a>
-            </li>
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-8">
+                        <div class="h-100">
+                            <div class="academy-logo">
+                                <a href="/">
+                                  <img src="https://fontmeme.com/permalink/200216/10843b6f348116246a3c9e1f6dde371e.png" alt="web-LOgo" class="logo-img" border="0"></a>
+                            </div>
 
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="modal" data-target="#myModal">Contact</a>
-            </li>
-
-          </ul>
-
+                        </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="login-content">
+                          <a href="reg_form"><img src="https://fontmeme.com/permalink/200216/008befa4bfc74d3e57de5e172f86532c.png" alt="fancy-fonts" border="0"></a>
+                          <a href="log_form"><img src="https://fontmeme.com/permalink/200216/4a200b9df50659f6d50ccafc69ffa4e5.png" alt="fancy-fonts" border="0"></a>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+       <div class="navigation-section">
 
-      </nav>
+         <nav class="navbar navbar-expand-lg bg-light">
+           <a class="navbar-brand "></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+             <span class="navbar-toggler-icon"></span>
+           </button>
 
+           <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+             <ul class="navbar-nav nav-pills">
+               <li class="nav-item">
+                 <a class="nav-link" href=">">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link"  data-toggle="modal" data-target="#myModal">Contact</a>
+               </li>
+
+             </ul>
+
+           </div>
+
+
+         </nav>
+
+      </div>
+      <form id="myModal" class=" modal fade" action="/contact" method="post" role="dialog">
+       <div class="modal-dialog">
+
+           <div class="modal-content">
+           <div class="modal-header">
+             <h4 class="modal-title">Contact Us</h4>
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+                <label for="Email">Please Enter Email Address for reply back</label>
+               <input  class="form-control" type="email" name="Email" value="" placeholder="Email Address" required><br>
+               <textarea class="form-control" name="name" rows="8" cols="70" resize="none" placeholder="Enter your message" required></textarea>
+          </div>
+       <div class="modal-footer">
+         <button type="submit" class="btn btn-info" name="email-send">Send</button>
+       </div>
+     </div>
    </div>
-   <form id="myModal" class=" modal fade" action="/contact" method="post" role="dialog">
-    <div class="modal-dialog">
-
-        <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Contact Us</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-       </div>
-       <div class="modal-body">
-             <label for="Email">Please Enter Email Address for reply back</label>
-            <input  class="form-control" type="email" name="Email" value="" placeholder="Email Address" required><br>
-            <textarea class="form-control" name="name" rows="8" cols="70" resize="none" placeholder="Enter your message" required></textarea>
-       </div>
-    <div class="modal-footer">
-      <button type="submit" class="btn btn-info" name="email-send">Send</button>
-    </div>
-  </div>
-</div>
 
 
-</div>
+ </div>
 </form>
-   <br></br>
+
+
+
+    </header>
+
+   <br><br><br><br></br>
    <div class="jumbotron">
-     <h1 class="aboutUs">About US</h1>
-     <hr style="width:40%; color:yellow; ">
+     <h1 class="aboutUs">About Us</h1>
+     <hr style="width:40%; color:yellow; " class="pd-5">
        <div  class="row">
         <div class="col-lg-2">
           </div>
           <div class="col-lg-8">
            <h1 style="font-family: 'Dancing Script', cursive;">who are we</h1>
            <br>
-           <p style="font-family: 'Lato', sans-serif;">
+           <p style="font-family: 'Lato', sans-serif;" class="pd-5">
              Last Minute tutorials  (LMT) is an online teaching portal. What makes LMT different from others is its teaching methodology. Like a friend would teach you the basics before your exam, LMT is just that friend who simplifies all the difficult concepts which are somewhat complex to comprehend. LMT believes in creating optimized and easy to understand videos and notes to help you with understand of complex topics and also your last minute revision due to the simple language used while explaining.
 
      This online teaching portal is one stop for all Eng.Our motto  is that we are always there for you
@@ -89,4 +118,5 @@
 
 
    </div>
-<%- include('partials/footer') %>
+
+   <%- include('partials/footer') %>
