@@ -76,7 +76,7 @@ justify-content: space-between;
 .text-top{
   display: inline-block;
   width:800px;
- padding-top: 250px;
+ padding-top: 230px;
   padding-left: 200px;
 }
 .h1-top{
@@ -84,17 +84,15 @@ justify-content: space-between;
   font-weight: bolder;
   font-family:'Bungee Inline';
   font-size: 50px;
-  padding-bottom: 30px;
   text-shadow: 10px 2px 5px rgba(2,0,36,1);
-  margin-top: 20px;
-  margin-bottom: 60px;
+  padding-bottom: 10px;
 }
 .h2-top{
   color:white;
   font-weight: bold;
   font-family: sans-serif;
   text-shadow: 5px 2px 5px rgba(121,9,26,1);
-
+  margin-bottom: 60px;
 }
 .academy-btn{
 display: inline-block;
