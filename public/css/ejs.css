@@ -39,11 +39,17 @@
   margin-bottom: 10px;
   padding: 0;
 }
-.gen-img{
+.pp{
   height: 30%;
   border-radius: 100%;
   border: 2px solid rgba(121,9,26,1);
 }
+.gen-img{
+  height: 300px;
+  border-radius: 100%;
+  border: 2px solid rgba(121,9,26,1);
+}
+
 .details{
   padding-top: 10px;
   text-align:left;
