@@ -1,16 +1,14 @@
 <html>
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/log-style.css">
-    <script src="https://kit.fontawesome.com/cabe027d2f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/log-style.css">
+      <script src="https://kit.fontawesome.com/cabe027d2f.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-
-
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-md-2 col-xs-12 "> </div>
@@ -26,12 +24,12 @@
                          <form class="aa" action="log_form" method="post">
                              <div class="form-group">
                                <label for="exampleInputEmail1" class="bb">Username</label>
-                               <input type="email" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter username">
+                               <input type="email" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter username" required>
 
                              </div>
                              <div class="form-group">
                                <label for="exampleInputPassword1" class="bb">Password</label>
-                               <input type="password" class="form-control" name="password" placeholder="Password">
+                               <input type="password" class="form-control" name="password" placeholder="Password" required>
                              </div>
 
                              <button type="submit" class="btn btn-primary" style="width:100%; margin-top:20px;">Sign In</button>

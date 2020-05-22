@@ -1,7 +1,8 @@
 [
   {
     "Sub": "Database Management System",
-    "video": [{
+    "video": [
+      {
         "id": "A",
         "name": "Difference between #DATA #INFORMATION #DATABASE and DATABASE MANAGEMENT SYSTEM",
         "link": "https://www.youtube.com/embed/cKRnbP6dZwc"
@@ -459,11 +460,40 @@
         "link": "https://www.youtube.com/embed/CHwLkUlq-vE"
       }
 
+    ],
+    "ebooks":[
+      {
+         "name": "Raghu Rama Krishnan",
+         "link": "https://drive.google.com/file/d/0B2dHzfDoM2MhbFh5VHg2VTB2MTg/preview"
+      },
+      {
+        "name":"Elmasri Navathe",
+        "link":"https://docs.google.com/file/d/0By5qxXmfg1UrQXJGaEV0Y1Y2UUE/preview"
+      }
+    ],
+    "hand":[
+      {
+         "name": "Class-notes 1",
+         "link": "https://drive.google.com/file/d/1Dze10rtMswszYAHdN_FkiYSxjBOKgH41/preview"
+      },
+      {
+         "name": "Class-notes 2",
+         "link": "https://drive.google.com/file/d/12c4H2u5JD01bGBTxr1ZP4WdF2H3OuHc2/preview"
+      },
+      {
+         "name": "Class-notes 3",
+         "link": "https://drive.google.com/file/d/1SZCRYZ0t5q6yZgA3NSxYY-D1tXh4llhg/preview"
+      },
+      {
+        "name":"Class-notes 4",
+        "link":"https://drive.google.com/file/d/1rHq92dPqMLO9zYbqerS1ExX3ybww1V6S/preview"
+      }
     ]
   },
   {
     "Sub": "Compiler Design",
-    "video": [{
+    "video": [
+      {
         "id": "A",
         "name": "Introduction and various phases of compiler",
         "link": "https://www.youtube-nocookie.com/embed/Qkwj65l_96I"
@@ -577,6 +607,26 @@
         "id": "S",
         "name": "S attributed and L attributed definitions",
         "link": "https://www.youtube-nocookie.com/embed/rdnAJBoFKOw"
+      }
+    ],
+    "ebooks":[
+      {
+         "name": "Compilers-Principle- Aho",
+         "link": "https://drive.google.com/file/d/0B1MogsyNAsj9elVzQWR5NWVTSVE/preview"
+      },
+      {
+        "name":"Allen Holub",
+        "link":"https://drive.google.com/file/d/1m97JpUo0xVmLhEet3K4a5ZSK25qUZFMG/preview"
+      }
+    ],
+    "hand":[
+      {
+         "name": "Class-notes 1",
+         "link": "https://drive.google.com/file/d/1qmYDmgnDOXfteydAqx63fqd93LmhzBH2/preview"
+      },
+      {
+         "name": "Class-notes 2",
+         "link": "https://drive.google.com/file/d/1B5T54yw8htB0DhYXfpVUF2IdK-uORlxF/preview"
       }
     ]
   }

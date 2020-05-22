@@ -4,144 +4,132 @@
 <% const Sem5=["Database Management System","Compiler Design"]; %>
 <% const Sem6=["Computer Network","Theory of Computation"]; %>
 
-    <p class="name">Hi! <span class ='name-span'><%= user.username %> </span>🖐 </p>
-<div class="lk">
-  <div class="container">
-    <hr>
+<p class="name">Hi! <span class ='name-span'><%= user.username %> </span>🖐 </p>
 
-    <div class="row">
-   <div class="col-2">
-  <div class="list-group" id="list-tab" role="tablist">
-
-    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">DashBoard</a>
-    <a class="list-group-item list-group-item-action"  href="/profile">Profile</a>
-    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Discussion</a>
-    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Syllabus</a>
-    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-time" role="tab" aria-controls="settings">TimeTable</a>
-  </div>
-
-</div>
-<div class="col-8">
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-   <% if(user.sem === "Sem3"){  %>
-     <% Sem3.forEach(function(item){ %>
-       <div class="card iot" style="width:300px">
-       <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
-       <div class="card-body">
-        <h4 class="card-title"><%=item%></h4>
-        <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
-       </div>
-       </div>
-      <%})}else if(user.sem === "Sem4"){%>
-        <% Sem4.forEach(function(item){ %>
+  <div class="contaier">
+    <div class="col-2">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-home" role="tab">DashBoard</a>
+        <a class="list-group-item list-group-item-action" href="/profile">Profile</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages" role="tab">Discussion</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings" role="tab">Syllabus</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-time" role="tab">TimeTable</a>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel">
+          <% if(user.sem === "Sem3"){  %>
+          <% Sem3.forEach(function(item){ %>
           <div class="card iot" style="width:300px">
-          <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
-          <div class="card-body">
-           <h4 class="card-title"><%=item%></h4>
-           <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
-          </div>
-          </div>
-         <%})}else if(user.sem === "Sem5"){%>
-           <% Sem5.forEach(function(item){ %>
-             <div class="card iot" style="width:300px">
-             <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
-             <div class="card-body">
+            <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
+            <div class="card-body">
               <h4 class="card-title"><%=item%></h4>
               <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
-             </div>
-             </div>
-            <%})}else{%>
-              <% Sem6.forEach(function(item){ %>
-                <div class="card iot" style="width:300px">
-                <img class="card-img-top" src="/img/<%= item %>.jpg" alt="Card image">
-                <div class="card-body">
-                 <h4 class="card-title"><%= item %></h4>
-                 <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
-                </div>
-                </div>
-               <%})}%>
+            </div>
+          </div>
+          <%})}else if(user.sem === "Sem4"){%>
+          <% Sem4.forEach(function(item){ %>
+          <div class="card iot" style="width:300px">
+            <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title"><%=item%></h4>
+              <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
+            </div>
+          </div>
+          <%})}else if(user.sem === "Sem5"){%>
+          <% Sem5.forEach(function(item){ %>
+          <div class="card iot" style="width:300px">
+            <img class="card-img-top" src="/img/<%=item%>.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title"><%=item%></h4>
+              <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
+            </div>
+          </div>
+          <%})}else{%>
+          <% Sem6.forEach(function(item){ %>
+          <div class="card iot" style="width:300px">
+            <img class="card-img-top" src="/img/<%= item %>.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title"><%= item %></h4>
+              <a href="/userHome/<%=item%>" class="btn btn-primary">Start</a>
+            </div>
+          </div>
+          <%})}%>
 
-    </div>
-  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-   <div class="container">
-     <div class="row">
-       <div class="col-2">
-         <% if(user.gender === 'male') { %>
-           <img src="/img/man.png" class ="gen-img" alt="img">
-         <% } else { %>
-           <img src="/img/female.png" class ="gen-img" alt="img">
-          <% } %>
-       </div>
-       <div class="col-1">
+        </div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel">
+          <div class="container">
+            <div class="row kkk">
+              <div class="col-2">
+                <% if(user.gender === 'male') { %>
+                <img src="/img/man.png" class="gen-img" alt="img">
+                <% } else { %>
+                <img src="/img/female.png" class="gen-img" alt="img">
+                <% } %>
+              </div>
+              <div class="col-2">
 
-       </div>
-       <div class="col-9">
-         <form class="form-group" action="submit" method="post">
-           <textarea class="form-control" name="name" rows="3" cols="80"></textarea>
-           <button class="btn btn-primary" type="submit" name="sub">Submit</button>
-         </form>
-       </div>
-     </div>
-  <div class="row">
+              </div>
+              <div class="col-8">
+                <form class="form-group" action="submit" method="post">
+                  <textarea class="form-control" name="name" rows="3" cols="80"></textarea>
+                  <button class="btn btn-primary" type="submit" name="sub">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="row">
 
-    <div class="col">
-      <% disc.forEach(function(item){ %>
-    <blockquote class="you">
-      <p class="secret-text">
-       <%= item.name %> <br>
-       </p>
-       <p class="secret-content" ><%= item.content %></p>
+              <div class="col">
+                <% disc.forEach(function(item){ %>
+                <blockquote class="you">
+                  <p class="secret-text">
+                    <%= item.name %> <br>
+                  </p>
+                  <p class="secret-content"><%= item.content %></p>
 
-      <footer class="foot"><%= item.date %></footer>
-     </blockquote>
-     <% }) %>
-    </div>
-  </div>
-   </div>
+                  <footer class="foot"><%= item.date %></footer>
+                </blockquote>
+                <% }) %>
+              </div>
+            </div>
+          </div>
 
-  </div>
-    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-      <div>
-     <iframe src="/file/syll.pdf" style="width:100%;height:600px;"></iframe>
+        </div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel">
+          <div>
+            <iframe src="/file/syll.pdf" style="width:100%;height:600px;"></iframe>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list-time" role="tabpanel">
+          <div>
+            <iframe src="/file/Time.pdf" style="width:100%;height:600px;"></iframe>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="list-time" role="tabpanel" aria-labelledby="list-settings-list">
-      <div>
-     <iframe src="/file/Time.pdf" style="width:100%;height:600px;"></iframe>
+    <div class="col-3">
+      <div class="row">
+        <div class="card yi" style="width:300px">
+          <div class="card-body">
+            <h4 class="card-title yit">Sessional Syllabus</h4>
+            <marquee style="height:100px;" direction="up" scrollamount="2" onmouseover="stop()" onmouseout="start()">
+              <p class="card-text">Updated Soon</p>
+            </marquee>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="col-2">
-  <div class="row">
-    <div class="col">
-      <div class="card yi" style="width:300px">
-      <div class="card-body">
-       <h4 class="card-title yit">Sessional Syllabus</h4>
-       <marquee style="height:100px;" direction="up" scrollamount="2" onmouseover="stop()" onmouseout="start()">
-           <p class="card-text" >Updated Soon</p>
-         </marquee>
-  </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="card yi" style="width:300px">
-      <div class="card-body">
-       <h4 class="card-title yit">Assignments</h4>
-      <marquee direction="up" style="height:100px;" scrollamount="2" onmouseover="stop()" onmouseout="start()">
-        <p class="card-text" >No Pending Assignment</p>
+      <div class="row">
+        <div class="card yi" style="width:300px">
+          <div class="card-body">
+            <h4 class="card-title yit">Assignments</h4>
+            <marquee direction="up" style="height:100px;" scrollamount="2" onmouseover="stop()" onmouseout="start()">
+              <p class="card-text">No Pending Assignment</p>
             </marquee>
 
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
-</div>
+    </div></div>
 
 <%- include('partials/footer') %>

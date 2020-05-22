@@ -8,103 +8,81 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Covered+By+Your+Grace|Damion|Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/cabe027d2f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
 
-    <header class="header-area">
-
-        <div class="top-header">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-8">
-                        <div class="h-100">
-                            <div class="academy-logo">
-                                <a href="/">
-                                  <img src="https://fontmeme.com/permalink/200216/10843b6f348116246a3c9e1f6dde371e.png" alt="web-LOgo" class="logo-img" border="0"></a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="login-content">
-                          <a href="reg_form"><img src="https://fontmeme.com/permalink/200216/008befa4bfc74d3e57de5e172f86532c.png" alt="fancy-fonts" border="0"></a>
-                          <a href="log_form"><img src="https://fontmeme.com/permalink/200216/4a200b9df50659f6d50ccafc69ffa4e5.png" alt="fancy-fonts" border="0"></a>
-                      </div>
-                    </div>
-                </div>
-            </div>
+  <header class="header-area">
+        <div class = 'cont'>
+          <div class ='tit'>
+           <a href="" class="not-und"><h1 class = 'web-title'>Last Minute Tutorials</h1></a>
+          </div>
+          <div class = 'ga'>
+          <h3 class= "log-reg"> <a href="/log_form" class="not-und">Login</a> | <a href="/reg_form" class="not-und">Register</a> </h3>
+          </div>
         </div>
 
-       <div class="navigation-section">
 
-         <nav class="navbar navbar-expand-lg bg-light">
-           <a class="navbar-brand "></a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+      <nav class="navbar navbar-expand-lg navigation-section navitt" id="navi">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo">
+          <span class="navbar-toggler-icon"><i class="fas fa-grip-lines"></i> </span>
+        </button>
 
-           <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-             <ul class="navbar-nav nav-pills">
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Home</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/about">About</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#c">Courses</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#team">Team</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link"  data-toggle="modal" data-target="#myModal">Contact</a>
-               </li>
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#c">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link iss" data-toggle="modal" data-target="#myModal">Contact</a>
+            </li>
 
-             </ul>
+          </ul>
 
-           </div>
+        </div>
 
 
-         </nav>
+      </nav>
 
-      </div>
-      <form id="myModal" class=" modal fade" action="/contact" method="post" role="dialog">
-       <div class="modal-dialog">
+    <form id="myModal" class=" modal fade" action="/contact" method="post" role="dialog">
+      <div class="modal-dialog">
 
-           <div class="modal-content">
-           <div class="modal-header">
-             <h4 class="modal-title">Contact Us</h4>
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Contact Us</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-                <label for="Email">Please Enter Email Address for reply back</label>
-               <input  class="form-control" type="email" name="Email" value="" placeholder="Email Address" required><br>
-               <textarea class="form-control" name="name" rows="8" cols="70" resize="none" placeholder="Enter your message" required></textarea>
+            <label for="Email">Please Enter Email Address for reply back</label>
+            <input class="form-control" type="email" name="Email" value="" placeholder="Email Address" required><br>
+            <textarea class="form-control" name="name" rows="8" cols="70" resize="none" placeholder="Enter your message" required></textarea>
           </div>
-       <div class="modal-footer">
-         <button type="submit" class="btn btn-info" name="email-send">Send</button>
-       </div>
-     </div>
-   </div>
-
-
- </div>
-</form>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-info" name="email-send">Send</button>
+          </div>
+        </div>
+      </div>
+    </form>
 
 
 
-    </header>
-
-
-
+  </header>
   <div id="title-carousel" class="carousel slide" data-ride="false">
 
     <div class="carousel-inner">
@@ -137,357 +115,348 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
   </div>
-
-
-<div id="c" class="middle-section">
+  <div id="c" class="middle-section">
     <div class="middle-1">
       <div class="container">
         <div class="row">
           <div class="col-4 pd-50 md-lg-2">
-           <i class="fas fa-address-book bg"></i>
+            <i class="fas fa-address-book bg"></i>
             <h4 class="middle-text">Online Material</h4>
-  <i class="fas fa-grip-lines-vertical"></i>
           </div>
           <div class="col-4 pd-50 md-lg-2">
-                <i class="fas fa-chalkboard-teacher"></i>
-              <h4 class="middle-text">All at one Place</h4>
-              <i class="fas fa-grip-lines-vertical"></i>
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h4 class="middle-text">All at one Place</h4>
           </div>
           <div class="col-4 pd-50 md-lg-2">
-    <i class="fas fa-headset"></i>
-    <h4 class="middle-text">Great Support</h4>
+            <i class="fas fa-headset"></i>
+            <h4 class="middle-text">Great Support</h4>
           </div>
         </div>
       </div>
-      </div>
-    <div class="row rt">
-      <div class="card-group">
-        <div class="col-lg-4 md-lg-2">
-          <div class="card">
-            <img class="card-img-top" src="/img/Computer Network.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Computer Network</h5>
-              <p class="card-text">It's semester 6th Subject which deals with various layers of networking. You will be learning IP addressing,How packets are transfered.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 40+ Videos<i class="fas fa-star ii"></i>Ebooks & PDFs&nbsp <span class="pop"> Class Notes</span> </small>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-4 md-lg-2">
-          <div class="card">
-            <img class="card-img-top " src="/img/Database Management System.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Database Management System</h5>
-              <p class="card-text">It's semester 5th Subject which deals with various data storage models. You will be learning Cool sql queries.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 100+ Videos<i class="fas fa-star ii"></i>Ebooks & PDFs&nbsp <span class="pop"> Class Notes</span></small>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-4 md-lg-2">
-          <div class="card">
-            <img class="card-img-top " src="/img/Algorithm.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Algorithm</h5>
-              <p class="card-text">Its a semester 4 subject contains various algorithms.You willl learn new techniques.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <strike> ₹500</strike><span class="pop">  FREE</span> </small>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div><br><br>
-    <div class=" rr collapse" id="collapseExample">
-       <div class="row">
-          <div class="card-group">
-        <div class="col-lg-4 md-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="/img/Theory of Computation.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Theory of Computation</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop">  FREE</span> </small>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-4 md-lg-4">
-          <div class="card">
-            <img class="card-img-top " src="/img/Compiler Design.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Compiler Design</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop">  FREE</span></small>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-4 md-lg-4">
-          <div class="card">
-            <img class="card-img-top " src="/img/Operating System.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Operating System</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <strike> ₹500</strike><span class="pop">  FREE</span> </small>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
     </div>
- <br><br>
-    <div class="row">
-      <div class="card-group">
-        <div class="col-lg-4 md-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="/img/Digital Logic.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Digital Logic</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop">  FREE</span> </small>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-4 md-lg-4">
-          <div class="card">
-            <img class="card-img-top " src="/img/Computer Organisation.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Computer Organisation</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop">  FREE</span></small>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-4 md-lg-4">
-          <div class="card">
-            <img class="card-img-top " src="/img/Progamming and Data Structures.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Progamming and Data Structures</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <strike> ₹500</strike><span class="pop">  FREE</span> </small>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-    </div>
-
-<button class="btn btn-block bttn" type="button" id="less" data-toggle="collapse" data-target="#collapseExample" onclick="change()" aria-expanded="false" aria-controls="collapseExample" >
-    More Courses
-  </button>
- <br></br></br>
-  <section id="team" class="pb-5">
-   <div class="container">
-       <h5 class="section-title h1">OUR TEAM</h5>
-       <div class="row">
-
-           <div class="col-xs-12 col-sm-6 col-md-6">
-               <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                   <div class="mainflip">
-                       <div class="frontside">
-                           <div class="card">
-                               <div class="card-body text-center">
-                                   <p><img class=" img-fluid" src="/img/atul.jpg" alt="card image"></p>
-                                   <h4 class="card-title">Atul</h4>
-                                   <p class="card-text"> Co-founder</p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="backside">
-                           <div class="card">
-                               <div class="card-body text-center mt-4">
-                                   <h4 class="card-title">Atul  kumar</h4>
-                                   <p class="card-text">A Btech graduate from Y.M.C.A Faridabad.A visioner  and a passionate  computer programmer.He has good coding skills and front end skills. </p>
-                                   <ul class="list-inline">
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/atul.atulin.kumar">
-                                               <i class="fa fa-facebook"></i>
-                                           </a>
-                                       </li>
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/atul62352535">
-                                               <i class="fa fa-twitter"></i>
-                                           </a>
-                                       </li>
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="#">
-                                               <i class="fa fa-skype"></i>
-                                           </a>
-                                       </li>
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="#">
-                                               <i class="fa fa-google"></i>
-                                           </a>
-                                       </li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+    <div class="middle-courese">
+   <div class="row rt">
+     <div class="card-group">
+       <div class="col-lg-4 md-lg-2">
+         <div class="card">
+           <img class="card-img-top" src="/img/Computer Network.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Computer Network</h5>
+             <p class="card-text">It's semester 6th Subject which deals with various layers of networking. You will be learning IP addressing,How packets are transfered.</p>
            </div>
-
-           <div class="col-xs-12 col-sm-6 col-md-6">
-               <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                   <div class="mainflip">
-                       <div class="frontside">
-                           <div class="card">
-                               <div class="card-body text-center">
-                                   <p><img class=" img-fluid" src="/img/lavish.jpg" alt="card image"></p>
-                                   <h4 class="card-title">Lavish Varshney</h4>
-                                   <p class="card-text">Co-founder</p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="backside">
-                           <div class="card">
-                               <div class="card-body text-center mt-4">
-                                   <h4 class="card-title">Lavish Varshney</h4>
-                                   <p class="card-text">Lavish is btech graduate from  Y.M.C.A Faridabad.He has indepth  knowledge of Computer Science Core Subjects.He is also a passionate web dvevloper and He loves to  help others.</p>
-                                   <ul class="list-inline">
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="#">
-                                               <i class="fa fa-facebook"></i>
-                                           </a>
-                                       </li>
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="#">
-                                               <i class="fa fa-twitter"></i>
-                                           </a>
-                                       </li>
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="#">
-                                               <i class="fa fa-skype"></i>
-                                           </a>
-                                       </li>
-                                       <li class="list-inline-item">
-                                           <a class="social-icon text-xs-center" target="_blank" href="#">
-                                               <i class="fa fa-google"></i>
-                                           </a>
-                                       </li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+           <div class="card-footer">
+             <small class="text-muted"><i class="fas fa-user-tie ii"></i> 40+ Videos<i class="fas fa-star ii"></i>Ebooks & PDFs&nbsp <span class="pop"> Class Notes</span> </small>
            </div>
-
+         </div>
 
        </div>
+       <div class="col-lg-4 md-lg-2">
+         <div class="card">
+           <img class="card-img-top " src="/img/Database Management System.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Database Management System</h5>
+             <p class="card-text">It's semester 5th Subject which deals with various data storage models. You will be learning Cool sql queries.</p>
+           </div>
+           <div class="card-footer">
+             <small class="text-muted"><i class="fas fa-user-tie ii"></i> 100+ Videos<i class="fas fa-star ii"></i>Ebooks & PDFs&nbsp <span class="pop"> Class Notes</span></small>
+           </div>
+         </div>
+
+       </div>
+       <div class="col-lg-4 md-lg-2">
+         <div class="card">
+           <img class="card-img-top " src="/img/Algorithm.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Algorithm</h5>
+             <p class="card-text">Its a semester 4 subject contains various algorithms.You will learn new techniques.</p>
+           </div>
+           <div class="card-footer">
+             <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop"> FREE</span> </small>
+           </div>
+         </div>
+
+       </div>
+     </div>
+   </div><br><br>
+   <div class=" rr collapse" id="collapseExample">
+     <div class="row">
+       <div class="card-group">
+         <div class="col-lg-4 md-lg-4">
+           <div class="card">
+             <img class="card-img-top" src="/img/Theory of Computation.jpg" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Theory of Computation</h5>
+               <p class="card-text">You will learn various working of machines NFA,DFA E-NFA Moore , turing machine </p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop"> FREE</span> </small>
+             </div>
+           </div>
+
+         </div>
+         <div class="col-lg-4 md-lg-4">
+           <div class="card">
+             <img class="card-img-top " src="/img/Compiler Design.jpg" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Compiler Design</h5>
+               <p class="card-text">You will be learning how compliers work , parsing machanism, syntax directed translation, intermediate code generation etc</p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop"> FREE</span></small>
+             </div>
+           </div>
+
+         </div>
+         <div class="col-lg-4 md-lg-4">
+           <div class="card">
+             <img class="card-img-top " src="/img/Operating System.png" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Operating System</h5>
+               <p class="card-text">Learning differnt operating System, deadlock handle, prevention ,file System Management </p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop"> FREE</span> </small>
+             </div>
+           </div>
+
+         </div>
+       </div>
+
+     </div>
+     <br><br>
+     <div class="row">
+       <div class="card-group">
+         <div class="col-lg-4 md-lg-4">
+           <div class="card">
+             <img class="card-img-top" src="/img/Digital Logic.jpg" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Digital Logic</h5>
+               <p class="card-text">Conversion of one code to another,Combination circuits ,Sequential circuit, beauty of K-Map ,MUX,DEMUX,Encoders,Decoders</p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop"> FREE</span> </small>
+             </div>
+           </div>
+
+         </div>
+         <div class="col-lg-4 md-lg-4">
+           <div class="card">
+             <img class="card-img-top " src="/img/Computer Organisation.png" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Computer Organisation</h5>
+               <p class="card-text">You will be learning how to design a computer and its architechure ,Addressing Modes,Memory Management</p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop"> FREE</span></small>
+             </div>
+           </div>
+
+         </div>
+         <div class="col-lg-4 md-lg-4">
+           <div class="card">
+             <img class="card-img-top " src="/img/Progamming and Data Structures.jpg" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Progamming and Data Structures</h5>
+               <p class="card-text">Coding in C languages, loops, array,struct,functions, pointers and graphs.</p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"><i class="fas fa-user-tie ii"></i> 20 Students &nbsp <i class="fas fa-star ii"></i>5 Stars &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strike> ₹500</strike><span class="pop"> FREE</span> </small>
+             </div>
+           </div>
+
+         </div>
+       </div>
+
+     </div>
+
    </div>
-</section>
 
+ </div>
+    <br>
+    <button class="btn btn-block bttn" type="button" id="less" data-toggle="collapse" data-target="#collapseExample" onclick="change()" aria-expanded="false" aria-controls="collapseExample" >
+       More Courses</button>
+    <br></br></br>
+    <section id="team" class="pb-5">
+     <div class="container">
+      <h5 class="section-title h1">OUR TEAM</h5>
+      <div class="row">
 
-
-  <div class="testimonial">
-       <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <div class="section-heading" >
-                      <span>our testimonials</span>
-                      <h3>See what our Students have to say about us.</h3>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="/img/atul.jpg" alt="card image"></p>
+                    <h4 class="card-title">Atul</h4>
+                    <p class="card-text"> Co-founder</p>
                   </div>
+                </div>
               </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">Atul kumar</h4>
+                    <p class="card-text">A Btech graduate from Y.M.C.A Faridabad.A visioner and a passionate computer programmer.He has good coding skills and front end skills. </p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/atul.atulin.kumar">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/atul62352535">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-skype"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-google"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="row">
-              <div class="col-12 col-md-6">
-                  <div class="single-testimonial  d-flex">
-                      <div class="testimonial-thumb">
-                          <img src="/img/test1.jpeg" class="test-img" alt="">
-                      </div>
-                      <div class="testimonial-content">
-                          <h5>Great Content</h5>
-                          <p class="p-test1">
-                            LMT videos are awesome. They helped our entire two divisions of TE computer engineering for spcc paper because your teaching method is awesome.I am student of differet universithy  but still i liked the quailty of study  material</p>
-                          <h6><span>Deepanshu Mathur,</span> Student</h6>
-                      </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="/img/lavish.jpg" alt="card image"></p>
+                    <h4 class="card-title">Lavish Varshney</h4>
+                    <p class="card-text">Co-founder</p>
                   </div>
+                </div>
               </div>
-              <div class="col-12 col-md-6">
-                  <div class="single-testimonial mb-100 d-flex">
-                      <div class="testimonial-thumb">
-                          <img src="/img/test2.jpg" class="test-img" alt="">
-                      </div>
-                      <div class="testimonial-content">
-                          <h5>Easy and user friendly courses</h5>
-                          <p class="p-test2">this really helped me to  prepare for the exams just one noght before.Thanks to  LMT , a life savier...</p>
-                          <h6><span>Kunal,</span> Student</h6>
-                      </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">Lavish Varshney</h4>
+                    <p class="card-text">Lavish is btech graduate from Y.M.C.A Faridabad.He has indepth knowledge of Computer Science Core Subjects.He is also a passionate web developer and He loves to help others.</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-skype"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-google"></i>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
+                </div>
               </div>
-              <div class="col-12 col-md-6">
-                  <div class="single-testimonial mb-100 d-flex">
-                      <div class="testimonial-thumb">
-                          <img src="/img/test3.jpg" class="test-img" alt="">
-                      </div>
-                      <div class="testimonial-content">
-                          <h5>I just love the courses here</h5>
-                          <p class="p-test3">“one of the best online teachers! so authentic, real and simple!
-i thought i will fail in subjects like SC or DSP but after Lmt.. the studying process became smooth! its was not ..</p>
-                          <h6><span>Ayush Garg,</span> Student</h6>
-                      </div>
-                  </div>
-              </div>
-           <div class="col-12 col-md-6">
-                  <div class="single-testimonial mb-100 d-flex">
-                      <div class="testimonial-thumb">
-                          <img src="/img/test4.jpeg" class="test-img" alt="">
-                      </div>
-                      <div class="testimonial-content">
-                          <h5>One good academy</h5>
-                          <p class="p-test4">“Your are doing good job, it’s reduce our time for collecting study material.
-Thank you”</p>
-                          <h6><span>Durgesh Dutt,</span> Student</h6>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
+        </div>
+
 
       </div>
-  </div>
+    </div></section>
+    <div class="testimonial">
+     <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-heading">
+          <span>our testimonials</span>
+          <h3>See what our Students have to say about us.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="single-testimonial  d-flex">
+          <div class="testimonial-thumb">
+            <img src="/img/test1.jpeg" class="test-img" alt="">
+          </div>
+          <div class="testimonial-content">
+            <h5>Great Content</h5>
+            <p class="p-test1">
+              LMT videos are awesome. They helped our entire two divisions of TE computer engineering for spcc paper because your teaching method is awesome.I am student of differet universithy but still i liked the quailty of study material</p>
+            <h6><span>Deepanshu Mathur,</span> Student</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="single-testimonial mb-100 d-flex">
+          <div class="testimonial-thumb">
+            <img src="/img/test2.jpg" class="test-img" alt="">
+          </div>
+          <div class="testimonial-content">
+            <h5>Easy and user friendly courses</h5>
+            <p class="p-test2">this really helped me to prepare for the exams just one noght before.Thanks to LMT , a life savier...</p>
+            <h6><span>Kunal,</span> Student</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="single-testimonial mb-100 d-flex">
+          <div class="testimonial-thumb">
+            <img src="/img/test3.jpg" class="test-img" alt="">
+          </div>
+          <div class="testimonial-content">
+            <h5>I just love the courses here</h5>
+            <p class="p-test3">“one of the best online teachers! so authentic, real and simple!
+              i thought i will fail in subjects like SC or DSP but after Lmt.. the studying process became smooth! its was not ..</p>
+            <h6><span>Ayush Garg,</span> Student</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="single-testimonial mb-100 d-flex">
+          <div class="testimonial-thumb">
+            <img src="/img/test4.jpeg" class="test-img" alt="">
+          </div>
+          <div class="testimonial-content">
+            <h5>One good academy</h5>
+            <p class="p-test4">“Your are doing good job, it’s reduce our time for collecting study material.
+              Thank you”</p>
+            <h6><span>Durgesh Dutt,</span> Student</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div></div>
+</div>
   <footer id="footer">
-  <a href="#"><i class="err fab fa-twitter"></i></a>
- <a href="#"><i class="err fab fa-facebook-f"></i></a>
 
- <a href="#"><i class="err fab fa-instagram"></i></a>
- <a href="#">  <i class="err fas fa-envelope"></i></a>
-  <p>© Copyright 2020 LMT</p>
+    <div class="footer-padding"></div>
+      <div class="footer text-center mt-5">
+        <a href="#"><i class="err fab fa-twitter"></i></a>
+       <a href="#"><i class="err fab fa-facebook-f"></i></a>
 
+       <a href="#"><i class="err fab fa-instagram"></i></a>
+       <a href="#">  <i class="err fas fa-envelope"></i></a>
+        <p>© Copyright 2020 LMT</p>
+
+      </div>
   </footer>
-<script type="text/javascript">
-   function change(){
-   var t = document.getElementById("less");
-    if(t.innerHTML == "More Courses"){
-      t.innerHTML= "Less Courses";
-    }else{
-      t.innerHTML= "More Courses";
-    }
-  }
-</script>
+
+  <script src="/js/index.js" charset="utf-8"></script>
+
   </body>
 </html>

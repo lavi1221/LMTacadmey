@@ -6,7 +6,7 @@ const ejs=require("ejs");
 const mongoose=require("mongoose");
 const passportLocalMongoose = require('passport-local-mongoose');
 const passport=require("passport");
-const swal=require("sweetalert2");
+const swal=require("sweetalert");
 const session =require("express-session");
 const date =require("date-and-time");
 const nodemailer=require("nodemailer");
@@ -21,7 +21,8 @@ const transporter=nodemailer.createTransport({
     }
 });
 
-
+var bd={};
+var num=0;
 var scrt=[];
 app.use(express.static("public"));
 app.set('view engine','ejs');
@@ -42,19 +43,22 @@ const userSchema= new mongoose.Schema({
   password:String,
   gender:String,
   phoneNo:Number,
-  sem:String,
+  sem:String
+});
+const adminSchema= new mongoose.Schema({
+  username:String,
   arr:[]
 });
 
 userSchema.plugin(passportLocalMongoose);
 
 const User=new mongoose.model("User",userSchema);
+const Admin = new mongoose.model("Admin",adminSchema);
 
 passport.use(User.createStrategy());
 passport.serializeUser(function(user, done) {
   done(null, user.id);
 });
-
 passport.deserializeUser(function(id, done) {
   User.findById(id, function(err, user) {
     done(err, user);
@@ -64,7 +68,6 @@ passport.deserializeUser(function(id, done) {
 app.get("/",function(req,res){
   res.sendFile(__dirname+"/home.html");
 });
-
 app.get("/home",function(req,res)
 {
   res.redirect("/");
@@ -72,7 +75,6 @@ app.get("/home",function(req,res)
 app.get("/reg_form",function(req,res){
   res.sendFile(__dirname+"/reg_form.html");
 });
-
 app.get("/log_form",function(req,res){
   res.sendFile(__dirname+"/log_form.html");
 });
@@ -80,7 +82,6 @@ app.get("/about",function(req,res)
 {
   res.render("about");
 });
-
 app.get("/profile",function(req,res){
   if(req.isAuthenticated()){
     res.render('profile',{ user: req.user});
@@ -88,21 +89,30 @@ app.get("/profile",function(req,res){
   res.redirect("log_form");
  }
 });
-
 app.get("/userHome/:customSub",function(req,res){
   if(req.isAuthenticated()){
     var val=req.params.customSub;
-    res.render("resource.ejs",{
-      subject: val
+    fs.readFile('videos.json',function(error,data){
+      if(error){
+        res.status(500).end();
+      }else{
+        var newData = JSON.parse(data);
+        for (var i = 0; i < newData.length; i++){
+            if (newData[i].Sub == val){
+            break;
+            }
+        }
+        res.render("resource.ejs",{
+          subject: newData[i]
+        });
+
+      }
     });
-  }else{
-  res.redirect("log_form");
+    }else{
+   res.redirect("/log_form");
   }
 
 });
-
-
-
 app.get("/userHome/resource/:customSub",function(req,res){
   if(req.isAuthenticated()){
     fs.readFile('videos.json',function(error,data){
@@ -124,14 +134,12 @@ app.get("/userHome/resource/:customSub",function(req,res){
     });
 
   }else{
-  res.redirect("log_form");
+  res.redirect("/log_form");
   }
 });
-
-
 app.get("/userHome",function(req,res){
   if(req.isAuthenticated()){
-    User.findById("5e7da275ee531b23cc448cad",function(err,foundUser){
+    Admin.findById("5ec80b1dd8d3053ba88a0184",function(err,foundUser){
     if(err){
        console.log(err);
       }else{
@@ -144,14 +152,9 @@ app.get("/userHome",function(req,res){
    res.redirect("log_form");
    }
 });
-
-var bd={};
-var num=0;
-
 app.get("/verify",function(req,res){
   res.render("otp");
 });
-
 app.post("/verify",function(req,res){
   if(req.body.otp==num){
     User.register({username:bd.username,gender:bd.gender,sem:bd.sem,phoneNo:bd.PhoneNo},bd.password,function(err,user){
@@ -191,7 +194,6 @@ app.post("/reg_form",function(req,res){
    res.redirect("verify");
  }
 });
-
 app.post("/log_form",function(req,res){
   const user=new User({
      username:req.body.username,
@@ -229,7 +231,6 @@ app.get("/logout",function(req,res){
   req.logout();
   res.redirect("/");
 });
-
 app.post("/submit",function(req,res){
     var head=req.body.name;
     const now = new Date();
@@ -241,19 +242,18 @@ app.post("/submit",function(req,res){
      date:today
    };
 
-  User.findById("5e7da275ee531b23cc448cad",function(err,foundUser){
-     if(err){
-      console.log(err);
-     }else{
-       if(foundUser){
-         foundUser.arr.push(obj);
-         foundUser.save();
-       };
-     }
-   });
+   Admin.findById("5ec80b1dd8d3053ba88a0184",function(err,foundUser){
+      if(err){
+       console.log(err);
+      }else{
+        if(foundUser){
+          foundUser.arr.push(obj);
+          foundUser.save();
+        };
+      }
+    });
   res.redirect("userHome");
 });
-
 
 let port=process.env.PORT;
 if( port == null || port=="" ){

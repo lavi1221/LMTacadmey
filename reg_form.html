@@ -22,21 +22,21 @@
 
                    SignUp
                   </h1>
-                  <form class="aa" action="reg_form" method="post">
+                  <form class="aa" id = 'regis' action="reg_form" method="post">
               <div class="row">
                    <div class="col-lg-6">
                         <div class="form-group">
                          <label for="exampleInputEmail1" class="bb">Email</label>
-                         <input type="email" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter username">
+                         <input type="email" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter username" required>
 
                        </div>
                        <div class="form-group">
                          <label for="exampleInputPassword1" class="bb">Password</label>
-                         <input type="password" class="form-control" name="password" placeholder="Password">
+                         <input type="password" class="form-control" name="password" placeholder="Password" required>
                        </div>
                        <div class="form-group">
                          <label for="exampleInputPassword2" class="bb">Confirm Password</label>
-                         <input type="password" class="form-control" name="Password2" placeholder="Confirm Password">
+                         <input type="password" class="form-control" name="Password2" placeholder="Confirm Password" required>
                        </div>
                   </div>
                   <div class="col-lg-6">
@@ -47,7 +47,7 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputGender" class="bb">Gender</label>
-                        <input type="radio" id="male" name="gender" value="male">
+                        <input type="radio" id="male" name="gender" value="male" required>
                                  <label for="male" class="bb"> Male </label>
                                  <input type="radio" id="female" name="gender" value="female">
                                  <label for="female" class="bb"> Female </label>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="form-group">
                           <label for="exampleInputSem" class="bb">Choose Semester</label>
-                        <select class="se" name="sem" autofocus>
+                        <select class="se" name="sem" autofocus required>
                           <option value="" disabled selected>Select your Sem</option>
                             <option value="Sem3">Sem 3</option>
                             <option value="Sem4">Sem 4</option>
@@ -80,6 +80,7 @@
         </div>
     </div>
 
+    <script src="/js/reg.js" charset="utf-8"></script>
 
 </body>
 

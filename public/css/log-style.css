@@ -1,14 +1,10 @@
-*
-{
+*{
     margin:0px;
     padding:0px;
 }
 body{
-
-    background-image: url(/img/ymca.jpg);
+    background-image: url("/img/ymca.jpg");
     background-size: cover;
-    background-attachment: fixed;
-
 }
 hr{
 
@@ -38,8 +34,7 @@ hr{
   display:inline;
   margin-right: 60px;
 }
-.ghu
-{
+.ghu{
 
     margin-top:150px;
     height:auto;
