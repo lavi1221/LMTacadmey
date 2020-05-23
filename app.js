@@ -43,7 +43,7 @@ const userSchema= new mongoose.Schema({
   password:String,
   gender:String,
   phoneNo:Number,
-  sem:String
+  sem:String,
 });
 const adminSchema= new mongoose.Schema({
   username:String,
