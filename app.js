@@ -212,7 +212,7 @@ app.post("/log_form",function(req,res){
 app.post("/contact",function(req,res){
   const mailOption={
   from : process.env.USER ,
-  to : process.env.USER,
+  to : 'lmtacademytut@gmail.com',
   subject: req.body.Email+" has sent a message",
   html: "<h3>Message is</h3> <p>" + req.body.name +"</p>."
 };
